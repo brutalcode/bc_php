@@ -1,0 +1,272 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"entity",
+				"entity_id"
+			],
+			[
+				"fie",
+				"field"
+			],
+			[
+				"wher",
+				"whereArray"
+			],
+			[
+				"whe",
+				"whereArray"
+			],
+			[
+				"en",
+				"entity_vid"
+			],
+			[
+				"where",
+				"where"
+			],
+			[
+				"valu",
+				"values"
+			],
+			[
+				"val",
+				"values"
+			],
+			[
+				"for",
+				"foreach\tforeach …"
+			],
+			[
+				"con",
+				"connection"
+			],
+			[
+				"C",
+				"Controller"
+			],
+			[
+				"fi",
+				"fields_array"
+			],
+			[
+				"array_c",
+				"array_combine"
+			],
+			[
+				"f",
+				"fun\tfunction …"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 354.0,
+		"last_filter": "sftp",
+		"selected_items":
+		[
+			[
+				"sftp",
+				"SFTP: Browse Server…"
+			],
+			[
+				"ins",
+				"Package Control: Install Package"
+			],
+			[
+				"git",
+				"Git: Commit"
+			],
+			[
+				"instal",
+				"Package Control: Install Package"
+			],
+			[
+				"mat",
+				"Material Theme: Activate theme"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 528.0
+	},
+	"console":
+	{
+		"height": 0.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/D/projects/drupal7_learn/sites/all/modules/bn_code_module/bn_menu_system/bn_menu_system.module",
+		"/D/projects/drupal7_learn/sites/all/modules/bn_code_module/bn_menu_system/bn_menu_system.info",
+		"/D/projects/drupal7_learn/sites/all/modules/bn_code_module/bn_layout/bn_layout.module",
+		"/D/projects/drupal8_learn/drupal_project/web/modules/lessons/db_layer_lesson/db_layer_lesson.routing.yml",
+		"/D/projects/drupal8_learn/drupal_project/web/modules/lessons/db_layer_lesson/src/Controller/MainController.php",
+		"/D/projects/drupal8_learn/drupal_project/web/modules/lessons/db_layer_lesson/src/Services/MainService.php",
+		"/D/projects/drupal8_learn/drupal_project/web/module/lessons/db_layer_lesson/db_layer_lesson.install",
+		"/D/projects/drupal8_learn/drupal_project/docker-compose.yml",
+		"/D/projects/drupal8_learn/drupal_project/web/modules/lessons/db_layer_lesson/db_layer_lesson.services.yml",
+		"/D/projects/drupal8_learn/drupal_project/web/modules/lessons/db_layer_lesson/src/Services/MainServiceInterface.php",
+		"/D/projects/drupal8_learn/drupal_project/web/core/lib/Drupal.php",
+		"/D/projects/drupal8_learn/drupal_project/web/modules/lessons/db_layer_lesson/modules/lessons/db_layer_lessons/src/Services/MainService.php",
+		"/D/projects/drupal8_learn/drupal_project/vendor/gabordemooij/redbean/testing/RedUNIT/Base/Database.php",
+		"/D/projects/drupal8_learn/drupal_project/web/modules/examples/dbtng_example/dbtng_example.install",
+		"/D/projects/drupal8_learn/drupal_project/web/core/themes/stark/config/schema/stark.schema.yml",
+		"/D/projects/drupal8_learn/drupal_project/web/core/themes/bartik/templates/block--search-form-block.html.twig",
+		"/D/projects/drupal8_learn/drupal_project/web/core/themes/stark/css/layout.css"
+	],
+	"find":
+	{
+		"height": 29.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"\n\ndb_layer_lesson.main_controller_test_merge:\n  path: '/db_layer_lesson/test_update'\n  defaults:\n    _controller: '\\Drupal\\db_layer_lesson\\Controller\\MainController::testMerge'\n    _title: 'test'\n  requirements:\n    _permission: 'access content'",
+			"\n\ndb_layer_lesson.main_controller_test_update:\n  path: '/db_layer_lesson/test_update'\n  defaults:\n    _controller: '\\Drupal\\db_layer_lesson\\Controller\\MainController::testUpdate'\n    _title: 'test'\n  requirements:\n    _permission: 'access content'",
+			"\n  public function testSelect() {\n    \n    $service = \\Drupal::service('db_layer_lesson.main_service');\n    \n    $fields = [\n      'entity_vid',\n      'is_major',\n      'runk',\n      'name',\n      'value'\n    ];    \n    $where = 'entity_vid = :entity_vid';\n    $whereArray = ['entity_vid' => 1];\n\n    $result = $service->select($fields, $where, $whereArray);\n\n    return [\n      '#type' => 'markup',\n      '#markup' => $this->t('Implement method: test')\n    ];\n  }"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 29.0
+	},
+	"input":
+	{
+		"height": 67.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"output.git":
+	{
+		"height": 144.0
+	},
+	"output.sftp":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "bc_php.sublime-project",
+	"replace":
+	{
+		"height": 54.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 322.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
