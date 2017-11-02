@@ -30,7 +30,7 @@ services:
       PHP_SENDMAIL_PATH: /usr/sbin/sendmail -t -i -S mailhog:1025
       PHP_FPM_CLEAR_ENV: "no"
       DB_HOST: mariadb
-      DB_USER: admin
+      DB_USER: root
       DB_PASSWORD: 1q2w3e4r
       DB_NAME: bc_prj
       DB_DRIVER: mysql
