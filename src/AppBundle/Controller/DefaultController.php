@@ -14,6 +14,6 @@ class DefaultController extends Controller
     public function indexAction(Request $request)
     {
         // replace this example code with whatever you need
-        return $this->render('Security/login.html.twig');
+        return $this->render('::default\_index.html.twig');
     }
 }

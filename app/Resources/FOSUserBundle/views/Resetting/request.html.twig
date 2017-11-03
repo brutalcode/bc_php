@@ -1,0 +1,56 @@
+{% trans_default_domain 'FOSUserBundle' %}
+{% extends "::base.html.twig" %}
+
+{% block body %}
+	{#{% for type, messages in app.session.flashBag.all %}
+    {% for message in messages %}
+      <div class="{{ type }}">
+        {{ message|trans({}, 'FOSUserBundle') }}
+      </div>
+    {% endfor %}
+    {% if error %}
+        <div>{{ error.messageKey|trans(error.messageData, 'security') }}</div>
+    {% endif %}
+     
+  {% endfor %}#}
+	<div class="page login-page forgot-page">
+    <div class="container d-flex align-items-center">
+      <div class="form-holder has-shadow">
+        <div class="row">
+          <!-- Logo & Information Panel-->
+          <div class="col-lg-6">
+            <div class="info d-flex align-items-center">
+              <div class="content">
+                <div class="logo">
+                  <h1>Brutal code project</h1>
+                </div>
+                <p>Slogan</p>
+              </div>
+            </div>
+          </div>
+          <!-- Form Panel    -->
+          <div class="col-lg-6 bg-white">
+            <div class="form d-flex align-items-center">
+              <div class="content">
+                <!-- <form id="login-form" action="{{ path("fos_user_security_check") }}" method="post"> -->
+                <form action="{{ path('fos_user_resetting_send_email') }}" method="POST" class="fos_user_resetting_request">
+							    <div class="form-group">
+                    <input id="username" type="text" name="username" required="required" class="input-material" >
+                    <label for="username" class="label-material">User Name</label>
+                  </div>
+                  <input type="submit" class="btn btn-primary" id="forgot-btn" name="_submit" value="{{ 'Sent'|trans }}" />
+                </form>
+
+                <a href="{{ path('fos_user_resetting_request') }}" class="forgot-pass">Login</a><br><small>Do not have an account? </small><a href="{{path('fos_user_security_login')}}" class="signup">Signup</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="copyrights text-center">
+      <p>Design by <a href="https://bootstrapious.com/admin-templates" class="external">Bootstrapious</a></p>
+      <!-- Please do not remove the backlink to us unless you support further theme's development at https://bootstrapious.com/donate. It is part of the license conditions. Thank you for understanding :)-->
+    </div>
+  </div>
+{% endblock %}

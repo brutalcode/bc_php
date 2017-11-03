@@ -1,0 +1,81 @@
+{% trans_default_domain 'FOSUserBundle' %}
+{% extends "::base.html.twig" %}
+
+{% block body %}
+{#{{ form_start(form, {'method': 'post', 'action': path('fos_user_registration_register'), 'attr': {'class': 'fos_user_registration_register'}}) }}
+    {{ form_widget(form.email,{ 'attr' : { 'class' : 'test'} }) }}
+    {{ form_widget(form.username) }}
+    {{ form_widget(form.plainPassword.first) }}
+    {{ form_widget(form.plainPassword.second) }}
+    <div>
+        <input type="submit" value="{{ 'registration.submit'|trans }}" />
+    </div>
+{{ form_end(form) }}#}
+
+
+
+<div class="page login-page">
+  <div class="container d-flex align-items-center">
+    <div class="form-holder has-shadow">
+      <div class="row">
+        <!-- Logo & Information Panel-->
+        <div class="col-lg-6">
+          <div class="info d-flex align-items-center">
+            <div class="content">
+              <div class="logo">
+                <h1>Dashboard</h1>
+              </div>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+            </div>
+          </div>
+        </div>
+        <!-- Form Panel    -->
+        <div class="col-lg-6 bg-white">
+          <div class="form d-flex align-items-center">
+            <div class="content">
+              <!-- <form id="register-form"> --> 
+              {{ form_start(form, {'method': 'post', 'action': path('fos_user_registration_register'), 'attr': {'class': 'fos_user_registration_register', 'id':'register-form'}}) }}
+                <div class="form-group">
+                  <!-- <input id="register-username" class="input-material"> -->
+                  {{ form_widget(form.username,{ 
+                  		'attr' : { 'class' : 'input-material', 'id' : 'register-username'} }) }}
+                  <label for="fos_user_registration_form_username" class="label-material">User Name</label>
+                </div>
+                <div class="form-group">
+                  <!-- <input id="register-email" type="email" name="registerEmail" required class="input-material"> -->
+                  {{ form_widget(form.email,{ 
+                  		'attr' : { 'class' : 'input-material', 'id' : 'register-email'} }) }}
+                  <label for="fos_user_registration_form_email" class="label-material">Email Address      </label>
+                </div>
+                <div class="form-group">
+                  <!-- <input id="register-passowrd" type="password" name="registerPassword" required class="input-material"> -->
+                  {{ form_widget(form.plainPassword.first,{ 
+                  		'attr' : { 'class' : 'input-material', 'id' : 'register-passowrd'} }) }}
+                  <label for="fos_user_registration_form_plainPassword_first" class="label-material">Password        </label>
+                </div>
+                <div class="form-group">
+                  <!-- <input id="register-passowrd" type="password" name="registerPassword" required class="input-material"> -->
+                  {{ form_widget(form.plainPassword.second,{ 
+                  		'attr' : { 'class' : 'input-material', 'id' : 'register-passowrd-second'} }) }}
+                  <label for="fos_user_registration_form_plainPassword_second" class="label-material">Confirm password        </label>
+                </div>
+                <!-- <div class="form-group terms-conditions">
+                  <input id="license" type="checkbox" class="checkbox-template">
+                  <label for="license">Agree the terms and policy</label>
+                </div> -->
+                <input id="register" type="submit" value="Register" class="btn btn-primary">
+              <!-- </form> -->
+              {{ form_end(form) }}
+              <small>Already have an account? </small><a href="{{path('fos_user_security_login')}}" class="signup">Login</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="copyrights text-center">
+    <p>Design by <a href="https://bootstrapious.com" class="external">Bootstrapious</a></p>
+    <!-- Please do not remove the backlink to us unless you support further theme's development at https://bootstrapious.com/donate. It is part of the license conditions. Thank you for understanding :)-->
+  </div>
+</div>
+{% endblock body %}

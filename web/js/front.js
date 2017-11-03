@@ -96,6 +96,10 @@ $(document).ready(function () {
             $(this).siblings('.label-material').removeClass('active');
         }
     });
+    
+    $('input.input-material').each(function() {
+        if($(this).val() != '') $(this).siblings('.label-material').addClass('active');
+    });
 
     // ------------------------------------------------------- //
     // External links to new window
